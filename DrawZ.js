@@ -124,7 +124,7 @@ var DrawZ = {
 		}
 	}, 
 	ellipseScaled(X, Y, W, H) {
-		if (typeof X === typeof []) {
+		if (typeof X === "object") {
 			H = W;
 			W = Y;
 			Y = X[1];
@@ -141,7 +141,7 @@ var DrawZ = {
 		);
 	},
 	invertScaled(X, Y) {
-		if (typeof X === typeof []) {
+		if (typeof X === "object") {
 			Y = X[1];
 			X = X[0];
 		}
@@ -152,7 +152,7 @@ var DrawZ = {
 		return vec;
 	},
 	lineScaled(X1, Y1, X2, Y2) {
-		if (typeof X === typeof []) {
+		if (typeof X === "object") {
 			Y2 = Y1[1];
 			X2 = Y1[0];
 			Y1 = X1[1];
@@ -166,7 +166,7 @@ var DrawZ = {
 		);
 	},
 	pointScaled(X, Y) {
-		if (typeof X === typeof []) {
+		if (typeof X === "object") {
 			Y = X[1];
 			X = X[0];
 		}
@@ -176,7 +176,7 @@ var DrawZ = {
 		);
 	},
 	textScaled(T, X, Y, S) {
-		if (typeof X === typeof []) {
+		if (typeof X === "object") {
 			S = Y;
 			Y = X[1];
 			X = X[0];
@@ -191,7 +191,7 @@ var DrawZ = {
 		);
 	},
 	vectorScaled(X, Y) {
-		if (typeof X === typeof []) {
+		if (typeof X === "object") {
 			Y = X[1];
 			X = X[0];
 		}
@@ -202,7 +202,7 @@ var DrawZ = {
 		return vec;
 	},
 	vertexScaled(X, Y) {
-		if (typeof X === typeof []) {
+		if (typeof X === "object") {
 			Y = X[1];
 			X = X[0];
 		}
