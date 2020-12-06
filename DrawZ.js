@@ -152,7 +152,7 @@ var DrawZ = {
 		return vec;
 	},
 	lineScaled(X1, Y1, X2, Y2) {
-		if (typeof X === "object") {
+		if (typeof X1 === "object") {
 			Y2 = Y1[1];
 			X2 = Y1[0];
 			Y1 = X1[1];
